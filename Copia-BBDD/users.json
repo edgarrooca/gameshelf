@@ -1,0 +1,7 @@
+{"_id":{"$oid":"6905013678a55652ef5e3626"},"username":"admin","email":"admin@gameshelf.com","password":"$2b$10$cve6BvkgdJ9uu.YEl487AOQOJUmONjv4VyfPiQEhKJz9mreEK36xe","avatar":null,"bio":"","isPublic":true,"createdAt":{"$date":{"$numberLong":"1761935670780"}},"updatedAt":{"$date":{"$numberLong":"1761935670780"}},"__v":{"$numberInt":"0"}}
+
+{"_id":{"$oid":"690731ba989ac2e73968577a"},"username":"usuario1","email":"usuario1@gmail.com","password":"$2b$10$i7pgt6y/AlF4EMAczNncau9AMKw6UwfIlYSpBIxtqWAxcrL15MpWS","avatar":null,"bio":"","isPublic":true,"createdAt":{"$date":{"$numberLong":"1762079162441"}},"updatedAt":{"$date":{"$numberLong":"1762079162441"}},"__v":{"$numberInt":"0"}}
+
+{"_id":{"$oid":"69073235989ac2e739685786"},"username":"usuario2","email":"usuario2@gmail.com","password":"$2b$10$pMEnmTIrKrLslxzPbFmJIe1dWZUcgEtBAkt608GNVsMiHY02Enf3G","avatar":null,"bio":"","isPublic":true,"createdAt":{"$date":{"$numberLong":"1762079285950"}},"updatedAt":{"$date":{"$numberLong":"1762079285950"}},"__v":{"$numberInt":"0"}}
+
+{"_id":{"$oid":"69073256989ac2e739685789"},"username":"usuario3","email":"usuario3@gmail.com","password":"$2b$10$s2yUiicxq4CsjJwc1HLUFeQdRLCw6jZDcBm0ckFI8QYjD9vbL32dq","avatar":null,"bio":"","isPublic":true,"createdAt":{"$date":{"$numberLong":"1762079318169"}},"updatedAt":{"$date":{"$numberLong":"1762079318169"}},"__v":{"$numberInt":"0"}}

@@ -1,0 +1,115 @@
+.modalContent {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.modalHeader {
+  display: none;
+}
+
+.modalBody {
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  padding: 0; /* El padding se manejará en las cápsulas */
+}
+
+.infoCapsule,
+.libraryCapsule {
+  background: rgba(26, 27, 46, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.libraryCapsule {
+  flex: 1;
+  min-width: 200px;
+}
+
+.listCapsule {
+  background: rgba(26, 27, 46, 0.88);
+  border-radius: 20px;
+  padding: 1.65rem 1.5rem;
+  flex: 0 0 auto;
+  min-width: 140px;
+}
+
+.miniCover {
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.actionsRow {
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .actionsRow {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Reducir altura de la primera cápsula en móvil */
+  .infoCapsule {
+    padding: 1rem;
+  }
+
+  /* Mantener cápsulas lado a lado con misma altura */
+  .libraryCapsule {
+    flex: 2;
+    min-width: 150px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .listCapsule {
+    flex: 1;
+    min-width: 120px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Hacer que ambas cápsulas tengan la misma altura */
+  .modalBody .content > :last-child > :first-child > :first-child,
+  .modalBody .content > :last-child > :first-child > :last-child {
+    flex: 1;
+  }
+
+  /* Mejorar legibilidad de botones en móvil */
+  .statusButton {
+    font-size: 14px;
+    line-height: 1.2;
+    min-height: 36px;
+    padding: 8px 12px;
+  }
+}
+
+/* Animación para texto deslizante en botones largos */
+.statusButton {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.statusButton:hover {
+  animation: scrollText 8s linear infinite;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
